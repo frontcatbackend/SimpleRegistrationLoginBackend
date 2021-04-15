@@ -1,7 +1,7 @@
 const express = require('express')
 require('dotenv').config()
 const sequelize = require('./db')
-const PORT = process.env.PORT || 5000
+const PORT = 5000
 const cors = require('cors')
 const router = require('./routes/registrationLoginRoute')
 

@@ -17,7 +17,7 @@ class UserController{
         if(!username || !password) {
             return next(ApiError.badRequest('Incorrect e-mail or password'))
         }
-        const candidate = await User.findOne({where: {username}}) //есть ли пользователь с таким e-mail?
+        const candidate = await User.findOne({where: {username}}) //есть ли пользователь с таким username?
         if (candidate) {
             return next(ApiError.badRequest('Пользователь с таким email уже существует'))
         }

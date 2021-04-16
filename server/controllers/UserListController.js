@@ -1,5 +1,5 @@
 const {User} = require('../models/UserModel')
-const ApiError = require('../error/ApiError');
+
 
 class UserListController {
     async getAll(req,res){
